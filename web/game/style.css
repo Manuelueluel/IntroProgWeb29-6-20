@@ -1,0 +1,85 @@
+
+/**
+ *   @author manuel
+ */
+
+
+/* Gestione e grafica della griglia*/
+/*Griglia con 9 colonne e 9 righe*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+/*Oggetti contenuti nella griglia*/
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    text-align: center;
+}
+.grid-item:hover{
+    background-color: #fcebe9;
+    border: 1px solid cornflowerblue;
+}
+/*Stili applicati ai bottoni una volta cliccati*/
+.bomba{
+    background-color: #b30000;
+}
+.nonBomba{
+    background-color: #66d9ff;
+}
+.disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+/*Bottone di reset*/
+.reset{
+    background-color: #f44336;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.reset:hover{
+    background-color: red;
+}
+            
+/* MODAL BOX, il popup di quando si perde la partita */
+/* The Modal (background) modifica lo sfondo della modal box
+che altro non è tutta la pagina.*/
+.modal {
+    display: none;  /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width ,copre tutta la largezza*/
+    height: 100%; /* Full height , copra tutta l'altezza*/
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+            /* Modal Content, la box che verrà messa in evidenza*/
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #990000;
+    width: 80%; /* percentuale su tutto lo schermo*/
+}
+/* The Close Button , può essere omesso*/
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+            
